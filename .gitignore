@@ -87,3 +87,9 @@ target/
 
 # Mypy cache
 .mypy_cache/
+
+local_S3/
+
+.env
+data/
+models/
