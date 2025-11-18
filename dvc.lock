@@ -5,8 +5,8 @@ stages:
     deps:
     - path: src/data/data_ingestion.py
       hash: md5
-      md5: 6d43aec421845d85ae6211999c986c83
-      size: 3468
+      md5: 8f7cd29227db15e69164878729895acd
+      size: 3395
     params:
       params.yaml:
         data_ingestion.test_size: 0.25
@@ -57,7 +57,7 @@ stages:
       nfiles: 2
     - path: models/vectorizer.pkl
       hash: md5
-      md5: 092578bb196b11d56a0fac3fdc3e332a
+      md5: 0330eb5f74cf47cb3a3a13c3aa03a854
       size: 1665
   model_building:
     cmd: python src/model/model_building.py
@@ -90,7 +90,7 @@ stages:
     outs:
     - path: reports/experiment_info.json
       hash: md5
-      md5: 1babf3b9842879e8b93aee67763fc0b5
+      md5: 52f320f67d5aa039005f8c149e9ed837
       size: 82
     - path: reports/metrics.json
       hash: md5
@@ -101,7 +101,7 @@ stages:
     deps:
     - path: reports/experiment_info.json
       hash: md5
-      md5: 1babf3b9842879e8b93aee67763fc0b5
+      md5: 52f320f67d5aa039005f8c149e9ed837
       size: 82
     - path: src/model/register_model.py
       hash: md5
